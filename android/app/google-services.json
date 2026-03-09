@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "951924104253",
+    "project_id": "kinbo-23e70",
+    "storage_bucket": "kinbo-23e70.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951924104253:android:65fd6e6d34c21bf3a11e54",
+        "android_client_info": {
+          "package_name": "com.example.kinbo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-n-dlQ0YGz7sbmVezmXzEfPG3zxZNDxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
