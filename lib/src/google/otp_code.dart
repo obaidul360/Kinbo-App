@@ -4,8 +4,8 @@ import 'package:kinbo/src/google/phone.dart';
 import 'package:kinbo/src/home/home_ui.dart';
 
 class OtpSender extends StatefulWidget {
-  final String verificatinId;
-  OtpSender({super.key, required this.verificatinId});
+  final String verificationId;
+  OtpSender({super.key, required this.verificationId});
 
   @override
   State<OtpSender> createState() => _OtpSenderState();
@@ -16,7 +16,7 @@ class _OtpSenderState extends State<OtpSender> {
   Future verifyOtp() async {
     try {
       PhoneAuthCredential credential = await PhoneAuthProvider.credential(
-        verificationId: widget.verificatinId,
+        verificationId: widget.verificationId,
         smsCode: otpController.text.trim(),
       );
       await FirebaseAuth.instance.signInWithCredential(credential);
@@ -27,26 +27,29 @@ class _OtpSenderState extends State<OtpSender> {
     } catch (e) {
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text("Invalid Id")));
+      ).showSnackBar(SnackBar(content: Text("Invalid OTP")));
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(height: 50),
-          TextField(
-            controller: otpController,
-            decoration: InputDecoration(
-              labelText: "Enter OTP",
-              border: OutlineInputBorder(),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            SizedBox(height: 50),
+            TextField(
+              controller: otpController,
+              decoration: InputDecoration(
+                labelText: "Enter OTP",
+                border: OutlineInputBorder(),
+              ),
             ),
-          ),
-          SizedBox(height: 30),
-          ElevatedButton(onPressed: verifyOtp, child: Text("Verify OTP")),
-        ],
+            SizedBox(height: 30),
+            ElevatedButton(onPressed: verifyOtp, child: Text("Verify OTP")),
+          ],
+        ),
       ),
     );
   }

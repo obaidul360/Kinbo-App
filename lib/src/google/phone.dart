@@ -15,8 +15,9 @@ class _PhoneAuthenticationState extends State<PhoneAuthentication> {
   final auth = FirebaseAuth.instance;
   bool loading = false;
   Future phoneLogin() async {
+    setState(() => loading = true);
     await auth.verifyPhoneNumber(
-      phoneNumber: phoneController.text.trim().toString(),
+      phoneNumber: phoneController.text.trim(),
       verificationCompleted: (PhoneAuthCredential credential) async {
         await auth.signInWithCredential(credential);
         Navigator.pushReplacement(
@@ -33,7 +34,7 @@ class _PhoneAuthenticationState extends State<PhoneAuthentication> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => OtpSender(verificatinId: verificationId),
+            builder: (context) => OtpSender(verificationId: verificationId),
           ),
         );
       },

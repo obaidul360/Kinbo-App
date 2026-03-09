@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:kinbo/src/google/email.dart';
 import 'package:kinbo/src/google/phone.dart';
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,10 +27,9 @@ class _MyAppState extends State<MyApp> {
         splitScreenMode: true,
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: PhoneAuthentication(),
+          home: EmailAuthenticationScreen(),
         ),
       ),
-    );
+    ); // PhoneAuthentication(),
   }
 }
-
