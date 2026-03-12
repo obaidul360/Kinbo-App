@@ -14,7 +14,9 @@ class _HomeUiScreenState extends State<HomeUiScreen> {
       appBar: AppBar(title: Text("Home Screen")),
       body: Center(
         child: Column(
-          children: [Text("SuccesFull Phone OTP"), Text("Successfull Email ")],
+          children: [
+            Text("SuccesFull Phone OTP"),
+            Text("Successfull Email ")],
         ),
       ),
     );

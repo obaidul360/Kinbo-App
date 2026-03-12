@@ -3,10 +3,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:kinbo/src/google/email.dart';
 import 'package:kinbo/src/google/phone.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -27,7 +29,7 @@ class _MyAppState extends State<MyApp> {
         splitScreenMode: true,
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: EmailAuthenticationScreen(),
+          home: PhoneAuthentication(), //EmailAuthenticationScreen(),
         ),
       ),
     ); // PhoneAuthentication(),

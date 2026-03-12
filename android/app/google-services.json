@@ -1,26 +1,51 @@
 {
   "project_info": {
-    "project_number": "951924104253",
-    "project_id": "kinbo-23e70",
-    "storage_bucket": "kinbo-23e70.firebasestorage.app"
+    "project_number": "367320789193",
+    "project_id": "kinbo-60140",
+    "storage_bucket": "kinbo-60140.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:951924104253:android:65fd6e6d34c21bf3a11e54",
+        "mobilesdk_app_id": "1:367320789193:android:5ca3a4cb9851ceef205d18",
         "android_client_info": {
           "package_name": "com.example.kinbo"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "367320789193-1lfjqabteivv5boo4o420pkpjpvnfdll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kinbo",
+            "certificate_hash": "fcdbf15109777e495f60b0ef21e123185095ce9e"
+          }
+        },
+        {
+          "client_id": "367320789193-m4vstss2kar38ivopj4c8n62vooa72fq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyC-n-dlQ0YGz7sbmVezmXzEfPG3zxZNDxo"
+          "current_key": "AIzaSyAendINAZM4Llca8sQw7SVHbHef8JGKbTg"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367320789193-m4vstss2kar38ivopj4c8n62vooa72fq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "367320789193-2g4chdcg8ruo1ogenqghlj2ga27lps0v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.kinbo"
+              }
+            }
+          ]
         }
       }
     }

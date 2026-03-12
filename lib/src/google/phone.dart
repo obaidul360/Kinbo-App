@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../home/home_ui.dart';
-import 'otp_code.dart';
+import 'otp_screen.dart';
 
 class PhoneAuthentication extends StatefulWidget {
   const PhoneAuthentication({super.key});
