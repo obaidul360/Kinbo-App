@@ -12,7 +12,11 @@ class _HomeUiScreenState extends State<HomeUiScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Home Screen")),
-      body: Center(child: Column(children: [Text("SuccesFull OTP")])),
+      body: Center(
+        child: Column(
+          children: [Text("SuccesFull Phone OTP"), Text("Successfull Email ")],
+        ),
+      ),
     );
   }
 }
