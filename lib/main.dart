@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:kinbo/src/google/email.dart';
+import 'package:kinbo/src/google/from/gmail_login.dart';
 import 'package:kinbo/src/google/phone.dart';
+import 'package:kinbo/src/home/home_ui.dart';
+import 'package:kinbo/src/test.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -29,7 +32,7 @@ class _MyAppState extends State<MyApp> {
         splitScreenMode: true,
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: PhoneAuthentication(), //EmailAuthenticationScreen(),
+          home:LoginPage(), //EmailAuthenticationScreen(),
         ),
       ),
     ); // PhoneAuthentication(),
