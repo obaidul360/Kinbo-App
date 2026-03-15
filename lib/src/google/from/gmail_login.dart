@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true,title: const Text("Login")),
+      appBar: AppBar(centerTitle: true, title: const Text("Login")),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Form(
@@ -69,7 +69,6 @@ class _LoginPageState extends State<LoginPage> {
                 obscureText: true,
                 decoration: const InputDecoration(
                   labelText: "Password",
-
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
@@ -101,7 +100,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
 
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.blue,
