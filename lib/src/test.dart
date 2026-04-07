@@ -12,7 +12,13 @@ class _TestScreenState extends State<TestScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [Text("Home"), SizedBox(height: 200), Text("Screen")],
+        children: [
+          Text("Home"),
+          SizedBox(height: 50),
+          Text("Product"),
+          SizedBox(height: 200),
+          Text("Screen"),
+        ],
       ),
     );
   }
